@@ -14,6 +14,9 @@ copyright: 2017 khj0704(Free lancer). All Rights Reserved.
 # Build settings
 markdown: kramdown
 
+# character set
+encoding: UTF-8
+
 # Account ids
 snapwidget: 247552
 

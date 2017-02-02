@@ -1,8 +1,8 @@
 # Site settings
 # in the templates available like {{ site.myvariable }}.
 title: Clean portfolio theme for Jekyll powered by Bootstrap 4.
-email: khj0704@gmail.com
-brand: ±èÇöÁØ
+email: "khj0704@gmail.com"
+brand: "±èÇöÁØ"
 headline: Inventor, Engineer and Futurist
 description: > # this means to ignore newlines until "baseurl:"
   New Site

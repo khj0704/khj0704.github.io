@@ -7,7 +7,7 @@ headline: Android Developer
 description: > # this means to ignore newlines until "baseurl:"
   New Site
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://blog.daum.net/creazier" # the base hostname & protocol for your site
+url: "https://khj0704.github.io/" # the base hostname & protocol for your site
 #copyright: 2016 Whatever Company, Inc. All Rights Reserved.
 copyright: 2017 khj0704(Freelancer). All Rights Reserved.
 

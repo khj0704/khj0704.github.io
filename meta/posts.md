@@ -1,7 +1,7 @@
 ---
-layout: post-list
-title:  Blog of Song
-description: "List of posts"
+layout: post
+title: khj0704's Portfolio Site.
+description: "posts"
 permalink: /blog/
 comment: false
 ---

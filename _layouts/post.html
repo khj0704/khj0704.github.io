@@ -24,6 +24,23 @@
 			/**
 			 * Posts
 			 */
+			.container-top-profile {
+				display: block;
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+				background-color: #79AFE8;
+				text-align: center;
+				position: relative
+			}
+			.container-top-thumbnail-image {
+				width: 100px;
+				height: 100px;
+				transition: all .3s
+			}
+			.container-top-thumbnail-image:hover {
+				filter: brightness(1.1);
+				-webkit-filter: brightness(1.1)
+			}
 			.post-header {
 				margin-bottom: 30px; 
 			}
@@ -42,10 +59,10 @@
 	</head>
 
 	<body>
-        <header class="container-fluid container-top" >
+        <header class="container-fluid container-top-profile" >
 			<div class="row">
 				<col-md-12>
-					<img src="../web-dist/images/profile-image.jpg" class="container-top-image img-circle m-x-auto" alt="{{ site.brand }}">
+					<img src="../web-dist/images/profile-image.jpg" class="container-top-thumbnail-image img-circle m-x-auto" alt="{{ site.brand }}">
 					<h1 class="container-top-name">
 						khj0704's Portfolio
 					</h1>
@@ -53,18 +70,31 @@
 			</div>
 		</header>
 
-		<p><br><br></p>
-
-		<div class="post">
-			<header class="post-header">
-				<h1 class="post-title">{{ page.title }}</h1>
-			</header>
-
-			<article class="post-content">
-				{{ content }}
-			</article>
-		</div>
-
+		<section class="container-fluid container-instagram" >
+			<div class="row">
+				<div class="col-md-12">
+					<header class="post-header">
+						<h1 class="post-title">{{ page.title }}</h1>
+					</header>
+					<img src="../web-dist/images/{{ page.image }}" style="width:100%;">
+					<p><br></p>
+					<article class="post-content">
+						{{ content }}
+					</article>  
+				</div>
+			</div>
+		</section>
+		<p><br></p>
+		
+		<footer class="container-fluid container-copyright" >
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						&copy;&nbsp;{{ site.copyright }}
+					</div>
+				</div>
+			</div>
+		</footer>
 	</body>
 
 </html>

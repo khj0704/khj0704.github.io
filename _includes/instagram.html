@@ -6,10 +6,11 @@
         <div class="col-md-12">
             <!-- Generate such a widget at snapwidget.com for your name -->
             <!-- Copy/paste code here or just update the snapwidget value at _config.yml -->
-			<!-- -->
+			<!-- 
             <script src="https://snapwidget.com/js/snapwidget.js"></script>
             <iframe src="https://snapwidget.com/embed/{{ site.snapwidget }}" class="snapwidget-widget" allowTransparency="true"
                     frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+			-->
 			<!--
 			<div style="position: relative; height: 16px; width: 100%; overflow: hidden; padding-top:100%;">
 				<iframe src="//widgets-code.websta.me/w/f1bdea0166bb?ck=MjAxNy0wMi0wM1QwNToxMzo1MS43MTRa" 
@@ -17,6 +18,25 @@
 					style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe> 
 			</div>
 			-->
+			{% for post in site.posts %}
+			{% cycle 'add row' : '<div class="row">', nil, nil %}
+			<div class="col-sm-3">
+				<div class="container">
+					<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" target="_blank">
+						<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->
+						<img src="./web-dist/images/{{ post.image}}.jpg" class="img-rounded m-x-auto" style="width:100%;height: 100%;transition: all .3s" alt="{{ site.brand }}">
+						<p class="m-x-auto" style="width:100%;height:100%;transition: all .3s">
+							<span style="font-family: 'Nanum Gothic', serif; font-size: 12px;">
+								{{ post.title }}
+							</span>
+						</p>
+					</a>
+				</div>
+			</div>
+			{% cycle 'end row' : nil, nil, '</div>' %}
+			{% endfor %}
+			{% cycle 'end row' : nil, '</div>', '</div>' %}
+
         </div>
     </div>
 </section>

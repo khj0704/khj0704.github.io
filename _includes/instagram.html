@@ -23,7 +23,7 @@
 				{% cycle 'add row' : '<div class="row">', nil, nil %}
 				<div class="col-sm-4">
 					<div class="container">
-						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" target="_blank">
+						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
 							<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->
 							<img src="./web-dist/images/{{ post.image}}.jpg" class="container-portfolio-image img-rounded m-x-auto" alt="{{ site.brand }}">
 							<p>

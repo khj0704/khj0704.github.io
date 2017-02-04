@@ -22,7 +22,7 @@
 				{% for post in site.posts %}
 				{% cycle 'add row' : '<div class="row">', nil, nil %}
 				<div class="col-sm-4" style="padding:5px;">
-					<div class="container-fluid" style="padding-left:5px;padding-right:2.5px;">
+					<div class="container-fluid" style="margin:5px auto;">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
 							<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->
 							<img src="./web-dist/images/{{ post.image}}" class="container-portfolio-image img-rounded m-x-auto" alt="{{ site.brand }}">

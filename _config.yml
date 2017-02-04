@@ -12,7 +12,7 @@ url: "https://khj0704.github.io/" # the base hostname & protocol for your site
 copyright: 2017 khj0704(Freelancer). All Rights Reserved.
 
 # Build settings
-permalink: /:title/
+permalink: /portfolio/:year/:month/:day/:title/
 highlighter: rouge
 markdown: kramdown
 

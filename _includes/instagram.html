@@ -22,12 +22,12 @@
 				{% for post in site.posts %}
 				{% cycle 'add row' : '<div class="row">', nil, nil %}
 				<div class="col-sm-4">
-					<div class="container-fluid" style="margin:5px auto;">
+					<div class="container-fluid" style="margin:10px auto;">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
 							<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->
 							<img src="./web-dist/images/{{ post.icon}}" class="container-portfolio-image img-rounded m-x-auto" alt="{{ site.brand }}">
 							<p class="container-portfolio-text">
-								<span style="font-family: 'Nanum Gothic', serif; font-size:12px; font-weight: bold; overflow:hidden;">
+								<span style="font-family: 'Nanum Gothic', serif; align:center; font-size:14px; font-weight:bold; overflow:hidden;">
 									{{ post.title }}
 								</span>
 							</p>

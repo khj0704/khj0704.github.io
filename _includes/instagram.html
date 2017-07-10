@@ -20,12 +20,11 @@
 			-->
 			<div class="container-fluid">
 				{% for post in site.posts %}
-				{% cycle 'add row' : '<div class="row">', nil, nil %}
-				<div class="col-sm-4">
+				{% cycle 'add row' : '<div class="row">', nil, nil, nil %}
+				<div class="col-md-3">
 					<div class="container-fluid" style="margin:10px auto;">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
 							<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->
-							<!-- container-portfolio-image img-rounded m-x-auto -->
 							<img src="./web-dist/images/{{ post.icon}}" class="img-fluid m-x-auto d-block img-rounded img-responsive" alt="{{ site.brand }}">
 							<p class="container-portfolio-text" style="text-align:center;">
 								<span style="font-family: 'Nanum Gothic', serif; font-size:14px; font-weight:bold; overflow:hidden;">

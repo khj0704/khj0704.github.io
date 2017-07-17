@@ -21,7 +21,7 @@
 			<div class="container-fluid">
 				{% for post in site.posts %}
 				{% cycle 'add row' : '<div class="row">', nil, nil, nil %}
-				<div class="col-sm-2 col-md-3">
+				<div class="col-sm-6 col-md-3">
 					<div class="container-fluid" style="margin:10px auto;">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
 							<!--<img src="{{ post.preview | prepend: site.baseurl }}"> -->

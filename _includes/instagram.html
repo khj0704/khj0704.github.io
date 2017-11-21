@@ -20,7 +20,7 @@
 			-->
 			<div class="container-fluid">
 				{% for post in site.posts %}
-				{% cycle 'add row' : '<div class="row">', nil, nil, nil %}
+				{% cycle 'add row' : '<div class="row">', '', '', '' %}
 				<div class="col-sm-6 col-md-3 col-lg-3">
 					<div class="container-fluid" style="margin:10px auto;">
 						<a href="{{ post.url | prepend: site.baseurl }}" class="no-uline" > <!-- target="_blank" -->
@@ -34,9 +34,9 @@
 						</a>
 					</div>
 				</div>
-				{% cycle 'end row' : nil, nil, nil, '</div>' %}
+				{% cycle 'end row' : '', '', '', '</div>' %}
 				{% endfor %}
-				{% cycle 'end row' : nil, '</div>', '</div>' %}
+				{% cycle 'end row' : '', '</div>', '</div>' %}
 
 			</div>
         </div>

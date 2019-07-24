@@ -21,6 +21,26 @@
 		<script src="../../../../../web-dist/js/bootstrap.min.js"></script>
 		<script src="https://use.fontawesome.com/266c035ce0.js"></script>
 		<script src="../../../../../web-dist/js/app.js"></script>
+		<script type="text/javascript" language="javascript">
+			// F12 버튼 방지
+			$(document).ready(function() {
+				$(document).bind('keydown',function(e) {
+					if ( e.keyCode == 123 /* F12 */) {
+						e.preventDefault();
+						e.returnValue = false;
+					}
+				});
+			});
+			// 우측 클릭 방지
+			document.onmousedown=disableclick;
+			function disableclick(event) {
+				if (event.button==2) {
+					//alert(status);
+					return false;
+				}
+			}
+		</script>
+
 		<style type="text/css">
 			a { outline: none !important; }
 			a.no-uline { text-decoration: none }
@@ -70,7 +90,7 @@
 		</style>
 	</head>
 
-	<body>
+	<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
         <header class="container-fluid container-top-profile" >
 			<div class="row">
 				<col-md-12>

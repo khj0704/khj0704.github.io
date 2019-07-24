@@ -18,26 +18,6 @@
     <script src="./web-dist/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/266c035ce0.js"></script>
     <script src="./web-dist/js/app.js"></script>
-	<script type="text/javascript" language="javascript">
-		var ns = (document.layers)?true:false;
-		var ie = (document.all)?true:false;
-		if (ns) document.captureEvents(Event.MOUSEDOWN || Event.CLICK);
-		document.onclick = sourcecodeprotect;
-		document.onmousedown = sourcecodeprotect;
-
-		//********************************************
-		function sourcecodeprotect(e){
-			if (ns&&(e.which==3)) return false;
-			else if (ie&&(window.event.button==2)) alert("Source code protected");
-			else return true;
-		}
-
-		document.onkeydown = function(){
-			if (event.keyCode == 123) {
-
-			}
-		}
-	</script>
 	<style type="text/css">
 		a.no-uline { text-decoration:none }
 		a.noul:hover { text-decoration:none !important }
